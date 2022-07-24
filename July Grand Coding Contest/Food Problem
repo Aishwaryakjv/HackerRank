@@ -65,18 +65,19 @@ int main() {
             cin>>arr[i];
         }
         if(arr[3]>arr[0]+arr[2]){
+       //cout<<"hi"<<endl;
         result="NO";}
-        
-        arr[2]=arr[2]-arr[0];
-        //arr[0]=0;
+    if(arr[0]<arr[3])    
+        arr[2]=arr[2]-(arr[3]-arr[0]);
     
-        if(arr[4]>arr[1]+arr[2]){
+    
+    if(arr[4]>arr[1]+arr[2]){
         result="NO";}
 
-        cout<<result<<endl;
+    cout<<result<<endl;
+        result="YES";
         
         t--;
     }
-    
     return 0;
 }
