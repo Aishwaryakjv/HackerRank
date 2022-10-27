@@ -27,3 +27,14 @@ Sample Output 1
 
 2
 
+int main() {
+    float a,b;
+    cin>>a;
+    cin>>b;
+    float c=b/a;
+    int d=ceil(c);
+    cout<<d;
+    //cout << ceil(15.08);
+    //cout << ceil(15);
+    return 0;
+}
