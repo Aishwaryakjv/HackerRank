@@ -1,0 +1,29 @@
+In one step, you can walk 'a' centimeters, given b centimeteres, how many steps are needed?
+
+Input Format
+
+each line contains two integers, a, b
+
+a denotes the number of centimetres you can walk in 1 step b denotes total number of steps
+
+Constraints
+
+1 <= a,b <= 10^9
+
+Output Format
+
+Output a single integer, which denotes the total number of steps.
+
+Sample Input 0
+
+1 1
+Sample Output 0
+
+1
+Sample Input 1
+
+2 4
+Sample Output 1
+
+2
+
