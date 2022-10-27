@@ -38,3 +38,22 @@ int main() {
     //cout << ceil(15);
     return 0;
 }
+
+
+note:
+generally if u have int a,int b;
+if a=2;b=3;
+float c=b/a gives 1 not 1.5 even though c is float 
+where as if u were given float a,b
+then b/a is 1.5
+
+eg code:
+int a=2,b=3; float c=b/a; print c;
+output: 1.0
+
+float a=2,b=3; float c=b/a; print c;
+output: 1.5
+
+
+The ceil() function returns double value. //in java
+The ceil() function returns int value.//cpp
