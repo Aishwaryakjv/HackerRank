@@ -1,0 +1,64 @@
+Shiva is moving boxes. Each box is of height 1 and width wi. He has to move each box through a long tube. The tube is of height 1 and length L. Find the maximum number of boxes shiva can fit inside the tube.
+
+Input Format
+
+L N W1 W2 W3 W4 ... WN
+
+Constraints
+
+The first line represents the width of the tube L (1<= L <= 10000) is given. The second line represents the number of box N (1<=N<=10000) The third line represents the width of each box Wi (1<=Wi <= L) are given separated by single-byte spaces.
+
+Output Format
+
+Print a single integer which is the maximum number of block Shiva can fit.
+
+Sample Input 0
+
+16
+3
+10 5 7
+Sample Output 0
+
+2
+Sample Input 1
+
+100
+10
+14 85 77 26 50 45 66 79 10 3
+Sample Output 1
+
+5
+Sample Input 2
+
+1
+1
+1
+Sample Output 2
+
+1
+
+ans:
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner ob=new Scanner(System.in);
+        int l,n;
+        l=ob.nextInt();
+        n=ob.nextInt();
+        int w[]=new int[n];
+        for(int i=0;i<n;i++)
+            w[i]=ob.nextInt();
+        Arrays.sort(w);
+        int i=0,sum=0,count=0;
+        while(i<n)
+        {
+            sum+=w[i++];
+            if(sum<=l)
+               count++;
+        }
+        System.out.print(count);
+    }
+}
