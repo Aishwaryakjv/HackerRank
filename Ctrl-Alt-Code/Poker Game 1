@@ -1,3 +1,41 @@
+You will be given 5 cards, each an integer from 1 to 13. Your role is to find the name of the combination. The names of the combinations are given below. If there are multiple possiblities, print the combinations that comes first in the given order
+
+FULL HOUSE Contains exactly three of one number and exactly two of another. THREE CARD Contains exactly three of a number. TWO PAIR Contains exactly two of one number and exactly two of another. ONE PAIR Contains exactly two of a number.
+
+If there is no possibility at all, print "NO HAND".
+
+Input Format
+
+A1 A2 A3 A4 A5
+
+Constraints
+
+1<=Ai<=13
+
+Output Format
+
+Print the name of the combination and nothing else.
+
+Sample Input 0
+
+5 6 5 6 5
+Sample Output 0
+
+FULL HOUSE
+Explanation 0
+
+There are 3 5's and 2 6's, so it's a FULL HOUSE.
+
+Sample Input 1
+
+5 6 5 6 7
+Sample Output 1
+
+TWO PAIR
+Explanation 1
+
+There are 2 5's and 2 6's, so it's a TWO PAIR.
+
 import java.io.*;
 import java.util.*;
 
