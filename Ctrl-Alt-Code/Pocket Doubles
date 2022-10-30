@@ -1,0 +1,68 @@
+Mythili got a "mysterious pocket".
+
+If you put a few biscuits in the ''mysterious pocket'' and hit it, the number of biscuits you put in will double.
+
+Mythili said she had one biscuit at first and she used the 'mysterious pocket', and she wants N biscuits, find the minimum number of times Mythili has to hit the pocket. (Note: She can put any number of biscuits in the pocket, not necessarily all.) (Don't go over the number because Mythili won't be able to eat it all.)
+
+Input Format
+
+N
+
+Constraints
+
+1<=N<=10^8
+
+Output Format
+
+Single Integer, The number of times Mythili has to hit the pocket.
+
+Sample Input 0
+
+3
+Sample Output 0
+
+2
+Explanation 0
+
+First, put one biscuit in your pocket and slap it. Then you will have two biscuits. Put one of the two biscuits in your pocket and hit it again for a total of three. So if you hit it twice, you get 3 biscuits
+
+Sample Input 1
+
+4    
+Sample Output 1
+
+2
+Explanation 1
+
+First, put one biscuit in your pocket and slap it. Then you will have two biscuits. Take 2 biscuits and hit them again for a total of 4 biscuits.
+
+Sample Input 2
+
+1000
+Sample Output 2
+
+10
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) 
+    {
+        Scanner ob=new Scanner(System.in);
+        int n=ob.nextInt();
+        int p=1,x=0;
+        while(true)
+        {
+            if(p>=n)
+            {
+                break;
+            }
+            p=2*p;
+            x+=1;
+           
+        }
+        System.out.print(x);
+    }
+}
